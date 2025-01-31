@@ -13,9 +13,6 @@ from inference_sdk import InferenceHTTPClient
 # Load .env file
 load_dotenv()
 
-print(os.getenv("OPENAI_API_KEY"))
-print(os.getenv("ROBOFLOW_API_KEY"))
-
 # %%
 class Conversation:
     def __init__(self, history, default_history=True):
